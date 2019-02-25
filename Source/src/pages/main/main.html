@@ -1,0 +1,26 @@
+
+<ion-header>
+  <ion-navbar>
+      <button block ion-button (click)="logout()" round class="logout">
+        <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+ </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list round>
+<h2> Gender detection</h2>
+  <p> Check the percentage. </p>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="name" name="name"></ion-input>
+    </ion-item>
+  <button block ion-button (click)="go()">Search</button>
+    <div class="col">
+      <h1>Gender: {{gender}}</h1>
+    </div>
+  </ion-list>
+<div class="col">
+  <h1>Accuracy percentage: {{accuracy}}</h1>
+  </div>
+</ion-content>
+<!--rst.name {{rst.gender}}-->

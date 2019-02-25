@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Find near by Pharmacy
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div>Find the nearest Pharmacies</div>
+<div> Please Enter your current co-ordinates</div>
+<ion-item>
+  <div>Enter the Latitude</div>
+  <input type="text"  [(ngModel)]="lat" name="Lat" >
+</ion-item>
+<ion-item>
+  <div>Enter the Longitude</div>
+  <input type="text"  [(ngModel)]="long" name="Long">
+</ion-item>
+<button  (click)="findphar()">Find</button>
+  <ion-content padding>

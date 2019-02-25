@@ -1,0 +1,8 @@
+{
+  "name": "Lab4",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "c5d7d965"
+}
